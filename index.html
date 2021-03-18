@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">
+            Weather API app
+        </h1>
+    </header>
+
+    <section class="main">
+        <div class="main-wrapper">
+            <div class="card" id="weather-card-interface">
+                <h2 class="weather-card__title">
+                    Riga
+                </h2>
+                <div class="weather-card__status">
+                    <div class="weather-card__status-temp">
+                        <span id="temp-ammount">10</span><span class="celsius-icon">&#x2103;</span>
+                    </div>
+                    <span class="weather-card__status-cond">
+                        Sunny
+                    </span>
+                    <img class="weather-card__status-img" src="https://www.wmcactionnews5.com/pb/resources/images/weather/weather-condition-icons/400x400/99_daily_forecast.png" alt="">
+                </div>
+                <button id="main-btn"  class="primary-btn primary-btn-card">
+                    Find out!
+                </button>
+            </div>
+            <div class="card controll-card" id="weather-card-controlls">
+                <h2 class="controll-card__title">
+                    Choose The City
+                </h2>
+                <div class="controll-card__wrapper">
+                    <select name="" id="card-select">
+                    </select>
+                    <!-- Wind Info -->
+                    <div class="controll-card__wind">
+                        <h3 class="controll-card__wind-title">
+                            Wind Info
+                        </h3>
+                        <ul class="controll-card__wind-wrapper">
+                            <h4 class="controll-card__wind-item-title">Speed</h4>
+                            <h4 class="controll-card__wind-item-title">Degrees</h4>
+                           <li class="controll-card__wind-item"><span id="controll-card__wind-speed" class="controll-card__wind-item-text">Speed:3</span></li>
+                           <li class="controll-card__wind-item"><span id="controll-card__wind-deg" class="controll-card__wind-item-text">Deg: 320</span></li>
+                        </ul>
+                    </div>
+                    <div class="custom-select__btn">
+                        <div class="custom-select__btn-wrapper"></div>
+                    </div>  
+                </div>
+                 <div class="arrow-left">
+                    &#171;
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
